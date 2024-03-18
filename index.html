@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create square</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <input type="button" value="Créer un carré" id="creercarre">
+        <input type="text" id="couleurcarre" placeholder="Couleur du carré ?">
+        <label for="mouvement"> Choisissez le mouvement !
+            <select id="mouvement">
+                <option value="gauche">Rotation gauche</option>
+                <option value="droite">Rotation droite</option>
+                <option value="hautenbas">Mouvement haut en bas</option>
+                <option value="basenhaut">Mouvement bas en haut</option>
+            </select>
+        </label>
+        <div id="centre">
+            <div id="square"></div>
+        </div>
+    </body>
+    <script src="./index2.js"></script>
+</html>

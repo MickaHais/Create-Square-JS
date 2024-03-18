@@ -1,0 +1,72 @@
+#centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#square{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: rotationCarre 4s linear infinite;
+}
+
+@keyframes rotationCarre{
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+}
+
+.newcarre{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    animation: rotationDroite 4s linear infinite;
+}
+
+@keyframes rotationDroite{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationGauche{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes hautenbas{
+  0% {
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-60px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes basenhaut{
+  0% {
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
